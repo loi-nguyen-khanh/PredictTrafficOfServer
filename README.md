@@ -31,10 +31,11 @@ Input of FNN have 10 feature as below:
 ### 4. Predict
 - Because we must predict 1 month for every server. This is long time.
 - We will predict 1 week in future. When we have result, we will concat with input data to make input feature for predict next week.
-<img src="./FNN/img/time_array.png" alt="drawing" style="width:100%;"/>
+<img src="./FNN/img/time_array.PNG" alt="drawing" style="width:100%;"/>
+
 
 ### 5. Output & Trick
 Metric of this contest is MAPE:
-<img src="./FNN/img/MAPE.png" alt="drawing" style="width:300px;"/>
+<img src="./FNN/img/MAPE.PNG" alt="drawing" style="width:300px;"/>
 
 So, when truth label At is so small, we maybe get MAPE that is so high. To avoid this case, when value of predict so small we set equal 0.
